@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transfert de fichiers</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Transfert de fichiers</h1>
+    <p>
+      Déposez votre document RFP et la documentation produit pour vérifier s'ils
+      correspondent aux exigences.
+    </p>
+
+    <div class="file-upload">
+      <input type="file" id="file-input1" style="display: none" />
+      <div id="drop-zone1" class="drop-zone">
+        Déposez votre document RFP ici
+      </div>
+      <label id="file-label1" class="file-label"></label>
+    </div>
+
+    <div class="file-upload">
+      <input type="file" id="file-input2" style="display: none" />
+      <div id="drop-zone2" class="drop-zone">
+        Déposez votre documentation produit ici
+      </div>
+      <label id="file-label2" class="file-label"></label>
+    </div>
+
+    <input
+      type="text"
+      id="file-description"
+      placeholder="Entrez une description"
+    />
+    <button onclick="fetchFiles()">Envoyer</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
