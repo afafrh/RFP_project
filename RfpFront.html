@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RFP_App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./media/logo.png" alt="Harmonic Logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p class="home_description">
+      Upload your RFP and product documentation to ensure they meet the
+      specified requirements.
+    </p>
+    <div class="container">
+      <div>
+        <div class="form-group">
+          <div class="file-upload">
+            <input
+              type="file"
+              id="file-input1"
+              style="display: none"
+              name="file1"
+              required
+            />
+            <div id="drop-zone1" class="drop-zone">
+              Déposez votre document RFP ici
+            </div>
+            <label for="file-input1" id="file-label1" class="file-label">
+              Aucun fichier sélectionné
+            </label>
+            <div id="error-message1" class="error-message"></div>
+          </div>
+
+          <div class="file-upload">
+            <input
+              type="file"
+              id="file-input2"
+              style="display: none"
+              name="file2"
+              required
+            />
+            <div id="drop-zone2" class="drop-zone">
+              Déposez votre documentation produit ici
+            </div>
+            <label for="file-input2" id="file-label2" class="file-label">
+              Aucun fichier sélectionné
+            </label>
+            <div id="error-message2" class="error-message"></div>
+          </div>
+
+          <div class="input-group">
+            <input
+              type="text"
+              id="file-description"
+              name="description"
+              placeholder="Entrez votre prompt"
+            />
+          </div>
+
+          <button id="button" type="button">Submit</button>
+        </div>
+      </div>
+      <input
+        type="text"
+        id="server-response"
+        placeholder="Réponse du serveur"
+        readonly
+      />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
